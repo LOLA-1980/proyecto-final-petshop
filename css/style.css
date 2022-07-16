@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: #D4E5F3;
+}
+
+ul {
+    list-style-type: none;
+    text-align: end;
+}
+
+li {
+    /*background-color: #F6E3CA;
+    border: #D7C8B6 2px solid;*/
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    color: black;
+    padding: 0 4px;
+    text-decoration: none;
+}
+
+.is-font-weight {
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: darkblue;
+    color: #D4E5F3;
+}
+
+.background {
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.background__intro {
+    background-image: url(/assets/img/adorable-puppies.jpg);
+}
+
+.background__contact {
+    background-image: url(/assets/img/v1051-40b.jpg);
+}
+
+.title {
+    font-size: 35px;
+    padding-left: 30px;
+}
+
+.nav__list {
+    list-style: none;
+}
+
+.nav__link {
+    color: darkblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+#intro-section {
+    background-color: #f3ebeb;
+}
+
+#sections {
+    background-color: #D4E5F3;
+}
+
+.display-2 {
+    text-transform: capitalize;
+
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.display-2-intro {
+    font-weight: 700;
+}
+
+.display-2-description {
+    font-size: 1.4rem;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.download__title {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.center-video {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.menu {
+    display: block;
+}
+
+.icon-paw {
+    font-size: 35px;
+    padding-left: 20px;
+    color: darkblue;
+}
+
+/*ESTILOS PRODUCTS*/
+.table-padding {
+    padding: 2rem;
+}
+
+/*ESTILOS FAQ*/
+.faq-section {
+    padding: 3rem 10rem 0 10rem;
+}
+
+.img-perrito {
+    background: url(/assets/img/questionMark-Dog.jpg);
+    height: 500px;
+    width: 500px;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    bottom: 10rem;
+    left: 60rem;
+    opacity: .3;
+}
+
+
+/*ESTILOS CONTACT*/
+.contact-section {
+    padding: 0rem 0 3rem 3rem;
+}
+
+/*ESTILOS ABOUT US*/
+.pilares {
+    position: relative;
+    left: 30rem;
+}
+
+.pilares__size {
+    font-size: 1.2rem;
+}
+
+.about-section {
+    padding: 3rem 6rem 1rem 6rem;
+}
+
+.title-pilares {
+    padding-left: 6rem;
+    padding-top: 3rem;
+}
+
+
+
+/*ESTILOS DEL FOOTER*/
+footer {
+    background-color: black;
+    color: white;
+}
+
+.footer-bottom__copyright {
+    text-align: center;
+    color: gray;
+    font-weight: 400;
+}
+
+.title-footer {
+    padding: 2rem 0 2rem 0;
+}
+
+.social-media {
+    padding: 0 0 2rem 0;
+}
+
+.social-media-between {
+    padding: 0 1rem 0 0;
+}
