@@ -37,7 +37,7 @@ a {
 }
 
 .background__contact {
-    background-image: url(assets/img/v1051-40b.jpg);
+    background-image: url(../assets/img/doggy-yellow.jpg);
 }
 
 .title {
@@ -77,11 +77,6 @@ a {
 .navbar__list li a {
     color: #ffffff;
 }
-
-/*.navbar__list li a:hover {
-    background-color: darkblue;
-    color: #D4E5F3;
-}*/
 
 .boton-container {
     position: absolute;
@@ -283,7 +278,7 @@ a {
 }
 
 .img-perrito {
-    background: url(assets/img/questionMark-Dog.jpg);
+    background: url(../assets/img/questionMark-Dog.jpg);
     height: 500px;
     width: 500px;
     background-position: center center;
