@@ -354,7 +354,7 @@ footer {
 }
 
 .main-head__header-background {
-    background-image: url(assets/img/white-bulldog-puppy.jpg);
+    background-image: url(../assets/img/white-bulldog-puppy.jpg);
     height: 100vh;
     background-position: center center;
     background-size: cover;
@@ -362,7 +362,7 @@ footer {
 }
 
 .main-head__background-intro {
-    background-image: url(assets/img/adorable-puppies.jpg);
+    background-image: url(../assets/img/adorable-puppies.jpg);
     height: 100vh;
     background-position: center center;
     background-size: cover;
@@ -424,7 +424,7 @@ footer {
     }
 
     .header-background {
-        background-image: url(assets/img/white-bulldog-puppy.jpg);
+        background-image: url(/assets/img/white-bulldog-puppy.jpg);
         height: 100vh;
         background-position: center center;
         background-size: cover;
