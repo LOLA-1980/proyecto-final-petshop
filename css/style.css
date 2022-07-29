@@ -13,16 +13,6 @@ header {
     background-color: #D4E5F3;
 }
 
-/*ul {
-    list-style-type: none;
-    text-align: end;
-}*/
-
-/*li {
-    display: inline;
-    margin-right: 10px;
-}*/
-
 a {
     color: black;
     padding: 0 4px;
@@ -46,16 +36,8 @@ a {
     background-color: #c9deef6e;
 }
 
-/*.background__intro {
-    background-image: url(/assets/img/adorable-puppies.jpg);
-    height: 100vh;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-}*/
-
 .background__contact {
-    background-image: url(/assets/img/v1051-40b.jpg);
+    background-image: url(assets/img/v1051-40b.jpg);
 }
 
 .title {
@@ -99,14 +81,6 @@ a {
 /*.navbar__list li a:hover {
     background-color: darkblue;
     color: #D4E5F3;
-}*/
-
-/*.header-background {
-    background-image: url(/assets/img/white-bulldog-puppy.jpg);
-    height: 100vh;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
 }*/
 
 .boton-container {
@@ -193,32 +167,11 @@ a {
     font-size: 15px;
     border: none;
     border-radius: 50px;
-    /*background-image: linear-gradient(to bottom, red, yellow);*/
 }
 
 .tarjeta__info__boton:hover {
     background-image: linear-gradient(to bottom, #3a5552, #91BEB9);
 }
-
-/*.navbar__link {
-    display: inline-block;
-    color: darkblue;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-}*/
-
-/*.nav__list {
-    list-style: none;
-}*/
-
-/*.nav__link {
-    color: darkblue;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: inline-block;
-    font-weight: bold;
-}*/
 
 #intro-section {
     background-color: #f3ebeb;
@@ -330,7 +283,7 @@ a {
 }
 
 .img-perrito {
-    background: url(/assets/img/questionMark-Dog.jpg);
+    background: url(assets/img/questionMark-Dog.jpg);
     height: 500px;
     width: 500px;
     background-position: center center;
@@ -401,7 +354,7 @@ footer {
 }
 
 .main-head__header-background {
-    background-image: url(/assets/img/white-bulldog-puppy.jpg);
+    background-image: url(assets/img/white-bulldog-puppy.jpg);
     height: 100vh;
     background-position: center center;
     background-size: cover;
@@ -409,7 +362,7 @@ footer {
 }
 
 .main-head__background-intro {
-    background-image: url(/assets/img/adorable-puppies.jpg);
+    background-image: url(assets/img/adorable-puppies.jpg);
     height: 100vh;
     background-position: center center;
     background-size: cover;
@@ -471,7 +424,7 @@ footer {
     }
 
     .header-background {
-        background-image: url(/assets/img/white-bulldog-puppy.jpg);
+        background-image: url(assets/img/white-bulldog-puppy.jpg);
         height: 100vh;
         background-position: center center;
         background-size: cover;
