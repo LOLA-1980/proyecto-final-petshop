@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     /*box-sizing: border-box;*/
+    /*delimita el borde de la caja*/
 }
 
 body {
@@ -12,17 +13,15 @@ header {
     background-color: #D4E5F3;
 }
 
-ul {
+/*ul {
     list-style-type: none;
     text-align: end;
-}
+}*/
 
-li {
-    /*background-color: #F6E3CA;
-    border: #D7C8B6 2px solid;*/
+/*li {
     display: inline;
     margin-right: 10px;
-}
+}*/
 
 a {
     color: black;
@@ -34,10 +33,7 @@ a {
     font-weight: bold;
 }
 
-a:hover {
-    background-color: darkblue;
-    color: #D4E5F3;
-}
+
 
 .background {
     height: 100vh;
@@ -46,9 +42,17 @@ a:hover {
     position: relative;
 }
 
-.background__intro {
-    background-image: url(/assets/img/adorable-puppies.jpg);
+.background-nav {
+    background-color: #c9deef6e;
 }
+
+/*.background__intro {
+    background-image: url(/assets/img/adorable-puppies.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}*/
 
 .background__contact {
     background-image: url(/assets/img/v1051-40b.jpg);
@@ -59,17 +63,157 @@ a:hover {
     padding-left: 30px;
 }
 
-.nav__list {
+/*ESTILOS GENERALES HEADER, NAVBAR, MENÚ*/
+.navbar-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    /*eje X*/
+    justify-content: end;
+    /*eje Y*/
+    align-items: center;
+}
+
+.navbar__list {
     list-style: none;
 }
 
-.nav__link {
+.navbar__list li {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.navbar__list li a {
+    color: #ffffff;
+}
+
+/*.navbar__list li a:hover {
+    background-color: darkblue;
+    color: #D4E5F3;
+}*/
+
+/*.header-background {
+    background-image: url(/assets/img/white-bulldog-puppy.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}*/
+
+.boton-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.boton-container .fa-solid {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.boton-container p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* ESTILOS DEL MAIN */
+
+.main__title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta {
+    height: 600px;
+    width: 400px;
+    margin: 40px 20px 40px 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+.tarjeta__titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.tarjeta__img {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.tarjeta__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+    justify-content: center;
+}
+
+.tarjeta__info__precio {
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+.tarjeta__info__boton {
+    margin-bottom: 10px;
+    background-color: #91BEB9;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 50px;
+}
+
+/*.navbar__link {
+    display: inline-block;
+    color: darkblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}*/
+
+/*.nav__list {
+    list-style: none;
+}*/
+
+/*.nav__link {
     color: darkblue;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
     font-weight: bold;
-}
+}*/
 
 #intro-section {
     background-color: #f3ebeb;
@@ -81,7 +225,6 @@ a:hover {
 
 .display-2 {
     text-transform: capitalize;
-
     font-size: 2.5rem;
     font-weight: 400;
 }
@@ -115,7 +258,13 @@ a:hover {
 .icon-paw {
     font-size: 35px;
     padding-left: 20px;
-    color: darkblue;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+/*ESTILOS INTRO*/
+.title-intro {
+    display: flex;
 }
 
 /*ESTILOS PRODUCTS*/
@@ -189,4 +338,106 @@ footer {
 
 .social-media-between {
     padding: 0 1rem 0 0;
+}
+
+
+/************GRID AREA**************/
+
+/*DAMOS NOMBRES A LAS ÁREAS*/
+.main-head {
+    grid-area: header;
+}
+
+.main-head__header-background {
+    background-image: url(/assets/img/white-bulldog-puppy.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.main-head__background-intro {
+    background-image: url(/assets/img/adorable-puppies.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.main-nav {
+    grid-area: nav;
+}
+
+.card-content {
+    grid-area: main;
+}
+
+
+.main-footer {
+    grid-area: footer;
+}
+
+/*DISEÑO PARA MOVIL*/
+.wrapper {
+    /*display: flex;*/
+    grid-gap: 20px;
+    min-height: 100vh;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer"
+}
+
+/*DISEñO PARA PANTALLAS DE MAS DE 480PX*/
+@media (min-width: 480px) {
+    .wrapper {
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas:
+            "header  header"
+            "nav     nav"
+            "main    main"
+            "footer  footer";
+    }
+
+    .wrapper2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-background {
+        background-image: url(/assets/img/white-bulldog-puppy.jpg);
+        height: 100vh;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+    }
+}
+
+/*DISEñO PARA PANTALLAS DE MAS DE 768PX*/
+
+@media (min-width: 768px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+    }
+
 }
