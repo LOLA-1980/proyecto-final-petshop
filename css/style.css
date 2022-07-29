@@ -193,6 +193,11 @@ a {
     font-size: 15px;
     border: none;
     border-radius: 50px;
+    /*background-image: linear-gradient(to bottom, red, yellow);*/
+}
+
+.tarjeta__info__boton:hover {
+    background-image: linear-gradient(to bottom, #3a5552, #91BEB9);
 }
 
 /*.navbar__link {
@@ -262,15 +267,62 @@ a {
     color: #ffffff;
 }
 
+
 /*ESTILOS INTRO*/
 .title-intro {
     display: flex;
+}
+
+.title-intro:hover {
+    transform: rotate(350deg);
 }
 
 /*ESTILOS PRODUCTS*/
 .table-padding {
     padding: 2rem;
 }
+
+@keyframes efecto {
+    0% {
+        width: 100px;
+    }
+
+    10% {
+        width: 50px;
+    }
+
+    25% {
+        width: 300px;
+    }
+
+    50% {
+        width: 200px;
+        background-color: #3a5552;
+        color: #ffffff;
+    }
+
+    75% {
+        width: 300px;
+    }
+
+    100% {
+        width: 100px;
+        background-color: #91BEB9;
+    }
+}
+
+.transformacion {
+    width: 100%;
+    height: 100%;
+    background-color: #91BEB9;
+    animation-name: efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 10s;
+}
+
+
 
 /*ESTILOS FAQ*/
 .faq-section {
