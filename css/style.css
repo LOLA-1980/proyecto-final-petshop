@@ -1,12 +1,17 @@
 * {
     margin: 0;
     padding: 0;
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
     /*delimita el borde de la caja*/
+    font-family: 'Poppins', sans-serif;
 }
 
+
+
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Poppins', sans-serif;
+    /*font-family: "Montserrat", sans-serif;*/
+
 }
 
 header {
@@ -29,6 +34,8 @@ a {
     height: 100vh;
     background-position: center center;
     background-size: cover;
+    /*background-repeat: no-repeat;
+    background-attachment: fixed;*/
     position: relative;
 }
 
@@ -53,16 +60,16 @@ a {
     color: #ffffff;
 }
 
-.navbar {
+/*.navbar {
     display: flex;
     flex-direction: row;
-    /*eje X*/
+    /*eje X
     justify-content: end;
-    /*eje Y*/
+    /*eje Y
     align-items: center;
-}
+}*/
 
-.navbar__list {
+/*.navbar__list {
     list-style: none;
 }
 
@@ -76,7 +83,7 @@ a {
 
 .navbar__list li a {
     color: #ffffff;
-}
+}*/
 
 .boton-container {
     position: absolute;
@@ -188,8 +195,9 @@ a {
 
 .display-2-description {
     font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
     padding-bottom: 30px;
-    text-align: center;
 }
 
 .download__title {
@@ -291,9 +299,7 @@ a {
 
 
 /*ESTILOS CONTACT*/
-.contact-section {
-    padding: 0rem 0 3rem 3rem;
-}
+
 
 /*ESTILOS ABOUT US*/
 .pilares {
@@ -337,26 +343,12 @@ footer {
 }
 
 .social-media-between {
-    padding: 0 1rem 0 0;
+    margin: 0 1rem 0 0;
 }
 
 
-/************GRID AREA**************/
 
-/*DAMOS NOMBRES A LAS ÁREAS*/
-.main-head {
-    grid-area: header;
-}
-
-.main-head__header-background {
-    background-image: url(../assets/img/white-bulldog-puppy.jpg);
-    height: 100vh;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-}
-
-.main-head__background-intro {
+.background-intro {
     background-image: url(../assets/img/adorable-puppies.jpg);
     height: 100vh;
     background-position: center center;
@@ -364,80 +356,39 @@ footer {
     position: relative;
 }
 
-.main-nav {
-    grid-area: nav;
+
+
+
+.background-products {
+    background-image: url(/assets/img/white-bulldog-puppy.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
 }
 
-.card-content {
-    grid-area: main;
+
+.background-nav {
+    background-color: #c9deef6e;
+}
+
+.background-contact {
+    background-image: url(../assets/img/doggy-yellow.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    /*background-repeat: no-repeat;
+    background-attachment: fixed;*/
+    position: relative;
 }
 
 
-.main-footer {
-    grid-area: footer;
+
+/*ESTILOS CARRUSEL*/
+.mRight {
+    margin-right: 160px;
 }
 
-/*DISEÑO PARA MOVIL*/
-.wrapper {
-    /*display: flex;*/
-    grid-gap: 20px;
-    min-height: 100vh;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "header"
-        "nav"
-        "main"
-        "footer"
-}
-
-/*DISEñO PARA PANTALLAS DE MAS DE 480PX*/
-@media (min-width: 480px) {
-    .wrapper {
-        grid-template-columns: 1fr 3fr;
-        grid-template-rows: auto auto 1fr auto;
-        grid-template-areas:
-            "header  header"
-            "nav     nav"
-            "main    main"
-            "footer  footer";
-    }
-
-    .wrapper2 {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto 1fr auto;
-        grid-template-areas:
-            "header"
-            "nav"
-            "main"
-            "footer";
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .header-background {
-        background-image: url(/assets/img/white-bulldog-puppy.jpg);
-        height: 100vh;
-        background-position: center center;
-        background-size: cover;
-        position: relative;
-    }
-}
-
-/*DISEñO PARA PANTALLAS DE MAS DE 768PX*/
-
-@media (min-width: 768px) {
-    .wrapper {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto 1fr auto;
-        grid-template-areas:
-            "header"
-            "nav"
-            "main"
-            "footer";
-    }
-
+.mLeft {
+    margin-left: 160px;
 }
