@@ -60,30 +60,6 @@ a {
     color: #ffffff;
 }
 
-/*.navbar {
-    display: flex;
-    flex-direction: row;
-    /*eje X
-    justify-content: end;
-    /*eje Y
-    align-items: center;
-}*/
-
-/*.navbar__list {
-    list-style: none;
-}
-
-.navbar__list li {
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 0 10px;
-}
-
-.navbar__list li a {
-    color: #ffffff;
-}*/
 
 .boton-container {
     position: absolute;
@@ -360,7 +336,7 @@ footer {
 
 
 .background-products {
-    background-image: url(/assets/img/white-bulldog-puppy.jpg);
+    background-image: url(../assets/img/white-bulldog-puppy.jpg);
     height: 100vh;
     background-position: center center;
     background-size: cover;
