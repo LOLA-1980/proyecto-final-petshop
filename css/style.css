@@ -10,6 +10,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    height: 100vh;
     /*font-family: "Montserrat", sans-serif;*/
 
 }
@@ -53,10 +54,15 @@ a {
 }
 
 /*ESTILOS GENERALES HEADER, NAVBAR, MENÚ*/
+
+.nav-width {
+    width: 100%;
+}
+
 .navbar-title {
     display: flex;
     justify-content: space-between;
-    padding: 20px 20px 0 20px;
+    /*padding: 20px 20px 0 20px;*/
     color: #ffffff;
 }
 
@@ -367,4 +373,107 @@ footer {
 
 .mLeft {
     margin-left: 160px;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width:720px) {
+
+    .background-intro {
+        background-image: url(../assets/img/adorable-puppies.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+
+    }
+
+    .background-products {
+        background-image: url(../assets/img/white-bulldog-puppy.jpg);
+        height: 100vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+    }
+
+    .background-contact {
+        background-image: url(../assets/img/doggy-yellow.jpg);
+        height: 100vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+    }
+
+}
+
+@media only screen and (max-width:480px) {
+    body {
+        height: 100vh;
+    }
+
+    .background-intro {
+        background-image: url(../assets/img/adorable-puppies.jpg);
+        height: 100vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+        background-position: 0%;
+    }
+
+    .background-products {
+        background-image: url(../assets/img/white-bulldog-puppy.jpg);
+        height: 100vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+        background-position: 0%;
+    }
+
+    .background-contact {
+        background-image: url(../assets/img/doggy-yellow.jpg);
+        height: 100vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+        background-position: 0%;
+    }
+
+
+    .hidden {
+        display: none;
+    }
+
+
+    .title-footer {
+        padding: 2rem;
+    }
+
+    /*ESTILOS CARRUSEL*/
+    .mRight {
+        margin-right: 25px;
+    }
+
+    .mLeft {
+        margin-left: 25px;
+    }
+
+    .boton-container {
+        left: 136px;
+        top: 224px;
+    }
+
+    .title-intro {
+        padding-top: 8px;
+    }
+
+}
+
+.imgResp {
+    height: 250px;
+    width: 100%;
+    display: block;
 }

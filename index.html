@@ -26,17 +26,17 @@
     <script src="app.js"></script>
 
     <title>PET SHOP</title>
-
 </head>
 
+
 <body>
-    <div>
+    <div class="row">
         <!--EMPIEZA EL HEADER-->
         <header class="col-sm-12 background-intro">
-            <div class="navbar-title background-nav">
+            <div class="navbar-title">
                 <div class="title-intro">
                     <i class="fa-solid fa-paw icon-paw"></i>
-                    <h1 class="font-weight-bold">ANIMALANDIA</h1>
+                    <h1 class="font-weight-bold hidden">ANIMALANDIA</h1>
                 </div>
 
                 <nav class="navbar navbar-expand-lg navbar-light">
@@ -63,12 +63,15 @@
                 <p>Desliza hacia abajo</p>
             </div>
         </header>
+    </div>
 
 
-        <!--EMPIEZA EL MAIN-->
-        <main class="card-content">
+
+    <!--EMPIEZA EL MAIN-->
+    <div class="row">
+        <main class="col-sm-12">
             <div id="carouselExampleIndicators" class="carousel slide m-3" data-ride="carousel">
-                <ol class="carousel-indicators container">
+                <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -106,26 +109,39 @@
                 </a>
             </div>
         </main>
+    </div>
+
+
+    <!--SECTION-->
+
+    <section class="row m-3">
+        <div class="col-sm-6">
+            <img src="assets/img/section2.png" class="img-fluid imgResp" alt="">
+        </div>
+        <div class="col-sm-6">
+            <img src="assets/img/sectio1.png" class="img-fluid imgResp" alt="">
+        </div>
+    </section>
 
 
 
+    <!--EMPIEZA EL MAIN-->
+    <!--<main id="intro-section" class="card-content">
+                <h1 class="display-2 download__title">INTRO</h1>
+                <iframe class="center-video" width="700" height="500" src="https://www.youtube.com/embed/5cxrKvra7Us"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <span class="display-2-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum nemo
+                    sit eligendi hic ipsam? Delectus eius fugiat corporis at. Nobis.
+                </span>
+            </main>-->
 
-        <!--EMPIEZA EL MAIN-->
-        <!--<main id="intro-section" class="card-content">
-            <h1 class="display-2 download__title">INTRO</h1>
-            <iframe class="center-video" width="700" height="500" src="https://www.youtube.com/embed/5cxrKvra7Us"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <span class="display-2-description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum nemo
-                sit eligendi hic ipsam? Delectus eius fugiat corporis at. Nobis.
-            </span>
-        </main>-->
 
-
-        <!-- inicio de footer -->
-        <footer class="footer-bottom__copyright">
+    <!-- inicio de footer -->
+    <div class="row">
+        <footer class="col-sm-12 footer-bottom__copyright">
             <h4 class="title-footer">Síganos en nuestras redes sociales</h4>
             <div class="social-media">
                 <img src="assets/icons/facebook3.png" class="social-media-between" height="50px" width="50px"
@@ -137,8 +153,8 @@
                 <img src="assets/icons/pinterest1.png" height="50px" width="50px" alt="pinterest">
             </div>
         </footer>
-
     </div>
+
 
 
     <!-- Optional JavaScript -->
