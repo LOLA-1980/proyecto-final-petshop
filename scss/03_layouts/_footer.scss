@@ -11,6 +11,10 @@
 
     &__title-footer {
         padding: 2rem 0 2rem 0;
+
+        @include smartphone {
+            padding: 2rem;
+        }
     }
 
     &__social-media {

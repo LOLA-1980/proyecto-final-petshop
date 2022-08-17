@@ -41,6 +41,10 @@
     padding-left: 20px;
     padding-right: 20px;
     color: #ffffff;
+
+    &--black {
+        color: #000000;
+    }
 }
 
 
@@ -54,18 +58,47 @@
     font-size: 1.2rem;
 }
 
-.about-section {
-    padding: 3rem 6rem 1rem 6rem;
+
+.background-Gray {
+    background-color: #f2ecec;
 }
 
-.title-pilares {
-    padding-left: 6rem;
-    padding-top: 3rem;
+.is-font-size-20 {
+    font-size: 20px;
+}
+
+.video-responsive {
+    @include smartphone {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16/9 ratio */
+        padding-top: 30px;
+        /* IE6 workaround*/
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+    @include smartphone {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
 }
 
 /*ESTILOS INTRO*/
 .title-intro {
     display: flex;
+
+    @include smartphone {
+        padding-top: 8px;
+    }
 }
 
 
@@ -80,7 +113,7 @@
     padding: 3rem 10rem 0 10rem;
 }
 
-.img-perrito {
+/*.img-perrito {
     background: url(../assets/img/questionMark-Dog.jpg);
     height: 500px;
     width: 500px;
@@ -90,10 +123,17 @@
     bottom: 10rem;
     left: 60rem;
     opacity: .3;
-}
+}*/
 
 .imgResp {
     height: 250px;
     width: 100%;
     display: block;
+}
+
+.hidden {
+    @include smartphone {
+        display: none;
+    }
+
 }

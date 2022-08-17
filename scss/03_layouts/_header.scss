@@ -4,23 +4,73 @@
     background-size: cover;
     position: relative;
 
+    @include smartphoneSec {
+
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: 0%;
+        width: 100%;
+        height: 300px;
+
+    }
+
+    @include smartphone {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+        background-position: 0%;
+    }
+
+
     &__background-intro {
         background-image: url(../assets/img/adorable-puppies.jpg);
+
+        @include smartphoneSec {
+            background-image: url(../assets/img/adorable-puppies.jpg);
+        }
+
+        @include smartphone {
+            background-image: url(../assets/img/adorable-puppies.jpg);
+        }
     }
 
     &__background-products {
         background-image: url(../assets/img/white-bulldog-puppy.jpg);
+
+        @include smartphoneSec {
+            background-image: url(../assets/img/white-bulldog-puppy.jpg);
+        }
+
+        @include smartphone {
+            background-image: url(../assets/img/white-bulldog-puppy.jpg);
+        }
     }
 
     &__background-contact {
         background-image: url(../assets/img/doggy-yellow.jpg);
+
+        @include smartphoneSec {
+            background-image: url(../assets/img/doggy-yellow.jpg);
+        }
+
+        @include smartphone {
+            background-image: url(../assets/img/doggy-yellow.jpg);
+        }
     }
+
+
+
 
     &__navbar-title {
         display: flex;
         justify-content: space-between;
         /*padding: 20px 20px 0 20px;*/
         color: #ffffff;
+
+        &--black {
+            color: #000000;
+        }
     }
 
 
@@ -33,6 +83,11 @@
         align-items: center;
         margin-bottom: 100px;
 
+        @include smartphone {
+            left: 136px;
+            top: 224px;
+        }
+
 
 
         &--text {
@@ -43,4 +98,30 @@
 
     }
 
+}
+
+.background-aboutus {
+    @extend.background;
+    background-image: url(../assets/img/grupo-mascotas-sentado.jpg);
+
+    @include smartphoneSec {
+        background-image: url(../assets/img/grupo-mascotas-sentado.jpg);
+    }
+
+    @include smartphone {
+        background-image: url(../assets/img/grupo-mascotas-sentado.jpg);
+    }
+}
+
+.background-faq {
+    @extend.background;
+    background-image: url(../assets/img/perrito-confundido-signos-interrogacion.jpg);
+
+    @include smartphoneSec {
+        background-image: url(../assets/img/perrito-confundido-signos-interrogacion.jpg);
+    }
+
+    @include smartphone {
+        background-image: url(../assets/img/perrito-confundido-signos-interrogacion.jpg);
+    }
 }
