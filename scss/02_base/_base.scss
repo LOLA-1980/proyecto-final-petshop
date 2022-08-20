@@ -5,7 +5,7 @@
   /*delimita el borde de la caja*/
   font-family: map-get($font, family);
   font-size: map-get($font, size);
-  //font-family: 'Poppins', sans-serif;
+  //outline: 1px;
 }
 
 
@@ -13,7 +13,7 @@
 body {
 
   height: 100vh;
-  /*font-family: "Montserrat", sans-serif;*/
+
 
 }
 
