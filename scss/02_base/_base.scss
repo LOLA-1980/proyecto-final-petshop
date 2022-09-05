@@ -5,7 +5,7 @@
   /*delimita el borde de la caja*/
   font-family: map-get($font, family);
   font-size: map-get($font, size);
-  //outline: 1px;
+  outline: 1px solid red;
 }
 
 
