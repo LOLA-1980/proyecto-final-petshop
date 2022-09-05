@@ -33,6 +33,11 @@ a {
   text-align: center;
   margin-top: 20px;
 }
+@media (min-width: 360px) and (max-width: 479px) {
+  .main-title {
+    font-size: 2rem;
+  }
+}
 
 .card-container {
   display: flex;
@@ -56,6 +61,7 @@ a {
   align-items: center;
   justify-content: center;
   padding-bottom: 10px;
+  text-align: center;
 }
 .tarjeta__img {
   width: 300px;
@@ -106,6 +112,7 @@ a {
 @media (min-width: 360px) and (max-width: 479px) {
   .footer__title-footer {
     padding: 2rem;
+    font-size: 1rem;
   }
 }
 .footer__social-media {
@@ -206,6 +213,11 @@ a {
   font-size: 1.5rem;
   color: #ffffff;
   font-weight: bold;
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .background__boton-container--text {
+    font-size: 1rem;
+  }
 }
 
 .background-aboutus {
@@ -326,6 +338,15 @@ a {
   font-size: 20px;
 }
 
+@media (min-width: 360px) and (max-width: 479px) {
+  .is-font-size-about {
+    font-size: 22px;
+  }
+  .whoAreWe {
+    font-size: 35px;
+    text-align: center;
+  }
+}
 @media (min-width: 360px) and (max-width: 479px) {
   .video-responsive {
     position: relative;

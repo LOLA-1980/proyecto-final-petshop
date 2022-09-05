@@ -67,6 +67,17 @@
     font-size: 20px;
 }
 
+@include smartphone {
+    .is-font-size-about {
+        font-size: 22px;
+    }
+
+    .whoAreWe {
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
 .video-responsive {
     @include smartphone {
         position: relative;
