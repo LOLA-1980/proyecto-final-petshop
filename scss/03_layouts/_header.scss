@@ -4,6 +4,7 @@
     background-size: cover;
     position: relative;
 
+
     @include smartphoneSec {
 
         background-size: 100% 100%;
@@ -105,14 +106,14 @@
 
 .background-aboutus {
     @extend.background;
-    background-image: url(../assets/img/grupo-mascotas-sentado.jpg);
+    background-image: url(../assets/img/allofus.jpg);
 
     @include smartphoneSec {
-        background-image: url(../assets/img/grupo-mascotas-sentado.jpg);
+        background-image: url(../assets/img/allofus.jpg);
     }
 
     @include smartphone {
-        background-image: url(../assets/img/grupo-mascotas-sentado.jpg);
+        background-image: url(../assets/img/allofus.jpg);
     }
 }
 
