@@ -17,15 +17,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
 
-    <!-- FONTAWESOME -->
-    <script src="https://kit.fontawesome.com/856c8aec09.js" crossorigin="anonymous"></script>
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+
 
     <title>ANIMALANDIA --ALIMENTO Y ACCESORIOS--</title>
 </head>
@@ -38,7 +34,7 @@
                 <div class="background__navbar-title">
                     <div class="d-flex">
                         <i class="fa-solid fa-paw icon-paw"></i>
-                        <h1 class="font-weight-bold hidden">ACCESORIOS Y ALIMENTO PARA TU MASCOTA</h1>
+                        <h1 class="font-weight-bold hidden">ACCESORIOS Y ALIMENTO</h1>
                     </div>
 
                     <nav class="navbar navbar-expand-lg navbar-light">
@@ -59,6 +55,9 @@
                                     href="aboutus.html">Nosotros</a>
                                 <a class="nav-item nav-link text-white font-weight-bold"
                                     href="contact.html">Contacto</a>
+                                <a class="nav-item nav-link text-white font-weight-bold" href="carrito.html">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
                             </div>
                         </div>
                     </nav>
@@ -71,68 +70,26 @@
         </div>
     </div>
 
+    <!--ALERT QUE YA HA SIDO AÑADIDO UN PRODUCTO AL CARRITO-->
+    <div class="alert alert-info container position-sticky top-0 hide" role="alert">
+        Producto añadido al carrito!
+    </div>
+
+    <!--ALERT QUE YA HA SIDO AÑADIDO UN PRODUCTO AL CARRITO-->
+    <div class="alert alert-danger container position-sticky top-0 remove" role="alert">
+        Producto removido!
+    </div>
+
     <!--EMPIEZA EL MAIN-->
     <main>
         <h1 class="main-title transformacion">CONOCE NUESTROS PRODUCTOS</h1>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-12 card-container">
-                    <div class="tarjeta">
-                        <h3 class="tarjeta__titulo">Comida para mascotas</h3>
-                        <img class="tarjeta__img" src="assets/img/NUPEC1.jpg" alt="croqueta Nupec1">
-                        <div class="tarjeta__info">
-                            <p class="tarjeta__info--precio">$300</p>
-                            <button class="tarjeta__info--boton">Agregar al carrito</button>
-                        </div>
-                    </div>
+                <div class="col-sm-12 card-container" id="tarjetas">
 
-                    <div class="tarjeta">
-                        <h3 class="tarjeta__titulo">Comida para mascotas</h3>
-                        <img class="tarjeta__img" src="assets/img/NUPEC1.jpg" alt="croqueta Nupec2">
-                        <div class="tarjeta__info">
-                            <p class="tarjeta__info--precio">$300</p>
-                            <button class="tarjeta__info--boton">Agregar al carrito</button>
-                        </div>
-                    </div>
-
-                    <div class="tarjeta">
-                        <h3 class="tarjeta__titulo">Comida para mascotas</h3>
-                        <img class="tarjeta__img" src="assets/img/NUPEC1.jpg" alt="croqueta Nupec3">
-                        <div class="tarjeta__info">
-                            <p class="tarjeta__info--precio">$300</p>
-                            <button class="tarjeta__info--boton">Agregar al carrito</button>
-                        </div>
-                    </div>
-
-                    <div class="tarjeta">
-                        <h3 class="tarjeta__titulo">Comida para mascotas</h3>
-                        <img class="tarjeta__img" src="assets/img/NUPEC1.jpg" alt="croqueta Nupec4">
-                        <div class="tarjeta__info">
-                            <p class="tarjeta__info--precio">$300</p>
-                            <button class="tarjeta__info--boton">Agregar al carrito</button>
-                        </div>
-                    </div>
-
-                    <div class="tarjeta">
-                        <h3 class="tarjeta__titulo">Comida para mascotas</h3>
-                        <img class="tarjeta__img" src="assets/img/NUPEC1.jpg" alt="croqueta Nupec5">
-                        <div class="tarjeta__info">
-                            <p class="tarjeta__info--precio">$300</p>
-                            <button class="tarjeta__info--boton">Agregar al carrito</button>
-                        </div>
-                    </div>
-
-                    <div class="tarjeta">
-                        <h3 class="tarjeta__titulo">Comida para mascotas</h3>
-                        <img class="tarjeta__img" src="assets/img/NUPEC1.jpg" alt="croqueta Nupec6">
-                        <div class="tarjeta__info">
-                            <p class="tarjeta__info--precio">$300</p>
-                            <button class="tarjeta__info--boton">Agregar al carrito</button>
-                        </div>
-                    </div>
+                    <!--AQUI VAN LAS TARJETAS DE PRODUCTOS HECHAS CON JS-->
 
                 </div>
-
                 <!--<a href="">
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>-->
@@ -170,6 +127,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/856c8aec09.js" crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- ARCHIVO JS -->
+    <script src="app.js"></script>
 
 </body>
 

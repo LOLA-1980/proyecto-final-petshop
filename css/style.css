@@ -17,8 +17,9 @@ body {
   height: 100vh;
 }
 
-header {
-  background-color: #D4E5F3;
+header,
+.alert {
+  z-index: 100;
 }
 
 a {
@@ -245,6 +246,39 @@ a {
   .background-faq {
     background-image: url(../assets/img/perrito-confundido-signos-interrogacion.jpg);
   }
+}
+
+.tabla__productos {
+  display: flex;
+}
+
+.tabla__productos > img {
+  width: 9rem;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+
+.tabla__cantidad > input {
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.carrito {
+  min-height: 80vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hide,
+.remove {
+  display: none;
 }
 
 /*ESTILOS GENERALES HEADER, NAVBAR, MENÚ*/

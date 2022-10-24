@@ -17,8 +17,10 @@ body {
 
 }
 
-header {
-  background-color: #D4E5F3;
+header,
+.alert {
+  z-index: 100;
+  //background-color: #D4E5F3;
 }
 
 a {
